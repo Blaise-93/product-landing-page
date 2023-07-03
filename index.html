@@ -8,8 +8,7 @@ href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Lato:ital,wgh
 rel="stylesheet"
 />
 <link rel="stylesheet" href="styles.css">
-     
-      <title>Uptown Legal Corporations</title>
+  <title>Uptown Legal Corporations</title>
 </head>
 <body>
 <header id="header">
@@ -19,24 +18,122 @@ rel="stylesheet"
         Uptown<span> Legal </span> Corporations
     </h1>
   </div>
+
   <nav id="nav-bar">
-    <ul class='nav-link'> 
-      <a class="nav-link" href="#features">Features</a></li>
-      <li><a class="nav-link"href="#services">Services</a></li>
-      <li><a class="nav-link"href="#products" >Products</a></li>
-        <li><a class="nav-link"href="# contactus ">Contact Us</a></li>
-    </ul>
+      <div><a class="nav-link" href="#email"></a></div>
+      <div><a class="nav-link" href="#features">Features</a></div>
+      <div><a class="nav-link" href="#services">Services</a></div>
+      <div><a class="nav-link" href="#Products">Products</a></div>
+      <div><a class="nav-link" href="#contact-us">Contact Us</a></div>
   </nav>
 </header>
 <main class="main-container">
-  <form id="form" action="https://www.freecodecamp.com/email-submit" method="">
-    <input id='email' type="email" placeholder="Enter your email" name="email"/>
-    <input id="submit" type='submit'>
-</form>
+<section id="features">
+  <div>
+    <h1>Hi there, welcome to our legal services</h1>
+    <p> Uptown Legal Corporations provide you all the legal prosecution, attorney and other legal services.
+        you need. For more enquires, check our <a href="#contact-us">contact section</a>
+    </p>
+    <p>To get started fill our form section below.</p>
+  </div>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="">
+     <input id='email' type="email" placeholder="Kindly enter your email address" name="email" required/>
+      <input id="submit" type='submit' value="GET STARTED" aria-label="">
+  </form>
 
-<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/2d2rfsm3ApU" allowfullscreen></iframe>
+</section>
+<section id="services">
+<h2 id="why-us">Why Choose Us</h2>
+<p class="service-benefit">
+  We provide hands-on experience to our clients and try our best in legal service delivery.    
+</p>
+<ul class="other-services">
+  <li class="roles">Adept at given consultation to legal information and documents.</li>
+  <li class="roles">Review documents from a legal perspective like agreements between two parties, leases etc </li>
+  <li class="roles">Offer mediation, arbitration, and other third-party services to clients.</li>
+  <li class="roles">Prepare legal documents for clients</li>
+  <li class="roles">Represent clients in negotiations that happen under collaborative lawyering agreement.</li>
+  <li class="roles">Represent clients in courtrooms in case of arbitration, administrative or legislative hearings</li>
+</ul>
+<h3>For more info, you may watch the video below.</h3>
+<iframe id="video" width="350" height="315" src="https://www.youtube.com/embed/2d2rfsm3ApU" allowfullscreen></iframe>
+</section>
+<section id="products">
+  <h1 class="product-heading">Our products</h1>
+  <!-- 
+  To give consultation to clients for legal information and documents 
+  To review documents from a legal perspective like agreements between two parties, leases,
+   wills, corporation documents, court forms, company formation papers
+ -->
+  <div class="all-products">
+    <img src="images/legal-product-1.jpeg" alt="court-judgement"  title="court judgement support" id="product">
+    <img src="images/legal-product-2.jpeg" alt="document reviews"  title="Legal documents reviews" id="product">
+    <img src="images/legal-product-3.jpeg" alt="dispute resolution"  title="legal dispute resolution" id="product">
+    <img src="images/proceedings.jpeg" alt="court room represent"  title="Represent clients in courtrooms in case of arbitration" id="product">
+    <img src="images/legal-product-5.jpeg" alt="legal backing"  title="Legal backing and advise" id="product">
+    <img src="images/legal-court.jpeg" alt="legal proceeding"  title=" Legal proceedings " id="product">
+  </div>
 
-</main>
+</section>
+<section id="contact-us">
+    <h2 class="contact-heading" >Contact Us</h2>
+    <h6 class="contact-subheading">
+      If you have Any Question for Us, Please Feel Free to contact us!
+    </h6>
+      <div class="">
+        <form action="" method="post" class="">
+        <div class="">
+            <div class="">
+              <div class="">
+                <input
+                  type="text"
+                  name="full_name"
+                  placeholder="Blaise Joe"
+                  class="form-control"
+                  id="full_name"
+                />
+                <label for="name">Your Name: </label>
+              </div>
+            </div>
+            <div class="">
+            </div>
+            <div class="">
+              <div class="form-floating">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="form-control"
+                  placeholder="subject"
+                />
+                <label for="subject">Subject:</label>
+              </div>
+            </div>
+            <div class="">
+              <div class="message">
+                <textarea 
+                  name="message"
+                  id="message"
+                  cols="50"
+                  rows="8"
+                  class=""
+                ></textarea>
+                <label for="message" class="">Message</label>
+              </div>
+            </div>
+            <div class="">
+              <button
+                class=""
+                type="submit" name="submit" aria-label="submit your message"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+ 
+</section>
 <footer id="footer"> Copyright @
   <script>
       document.write(new Date().getFullYear());
@@ -50,6 +147,8 @@ rel="stylesheet"
   >
 </div>
 </footer>
+</main>
+
 </body>
 
 </html>
