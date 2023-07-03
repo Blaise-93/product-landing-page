@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-size: 1rem;
+    color: #081d2f;
+    font-family: "lato", Arial, Helvetica, sans-serif;
+  
+  }
+  
+  #header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: steelblue;
+  }
+
+  #header #nav-bar {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: -10px; 
+    padding: 1.1em;
+    font-size: 1.3em;
+  }
+
+ #header-img {
+    width: 60px;
+    border-radius: 5px;
+    margin-left: 2em;
+  }
+
+ #img-container {
+  display: flex;
+} 
+
+#company-desc {
+ font-size: 1.3em;
+ padding-left: 0.45em;
+ color: #5f0411;
+ font-family: 'monkey'Verdana, Geneva, Tahoma, sans-serif;
+}
+span {
+  color: #40050e;
+ }
+  .nav-link {
+    display: flex;
+    align-items: space-evenly;
+    justify-content: center;
+    padding-left: 1.5em;
+    font-size: 1.2rem
+  }
+  
+  a, li {
+     list-style: none;
+    text-decoration: none;
+    color: #000;
+  }
+
+.nav-link:hover,
+.nav-link:focus {
+  cursor: pointer;
+  color:#34383c;
+  font: 900;
+}
+
+.main-container {
+  padding: 15px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+  @media(max-width: 800px){
+      body{
+        font-size: 1.5rem
+      }
+  }
+  
+  @media only screen and (min-width: 250px) and (max-width: 420px) {
+  #header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: steelblue;
+  }
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: center;
+    padding-left: 1.5em;
+    font-size: 1.2rem
+  }
+}  

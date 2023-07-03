@@ -3,28 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="styles.css">
-    <title>Product Landing Page</title>
+<link
+href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+rel="stylesheet"
+/>
+<link rel="stylesheet" href="styles.css">
+     
+      <title>Uptown Legal Corporations</title>
 </head>
 <body>
 <header id="header">
-<img id="header-img" src="#" alt="company-logo">
+  <div id="img-container">
+    <img id="header-img" src="./legal-image.jpeg" alt="company-logo">
+    <h1 id="company-desc">
+        Uptown<span> Legal </span> Corporations
+    </h1>
+  </div>
   <nav id="nav-bar">
     <ul class='nav-link'> 
       <a class="nav-link" href="#features">Features</a></li>
-      <li><a class="nav-link"href="#services">Services</a></  li>
+      <li><a class="nav-link"href="#services">Services</a></li>
       <li><a class="nav-link"href="#products" >Products</a></li>
         <li><a class="nav-link"href="# contactus ">Contact Us</a></li>
     </ul>
   </nav>
 </header>
-<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/2d2rfsm3ApU" allowfullscreen></iframe>
-<form id="form" action="https://www.freecodecamp.com/email-submit" method="">
+<main class="main-container">
+  <form id="form" action="https://www.freecodecamp.com/email-submit" method="">
     <input id='email' type="email" placeholder="Enter your email" name="email"/>
-  <input id="submit" type='submit'>
-
-
+    <input id="submit" type='submit'>
 </form>
+
+<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/2d2rfsm3ApU" allowfullscreen></iframe>
+
+</main>
 <footer id="footer"> Copyright @
   <script>
       document.write(new Date().getFullYear());
