@@ -29,15 +29,17 @@ rel="stylesheet"
 </header>
 <main class="main-container">
 <section id="features">
-  <div>
-    <h1>Hi there, welcome to our legal services</h1>
+  <div id="features-intro">
+    <h1>Welcome to our legal services</h1>
     <p> Uptown Legal Corporations provide you all the legal prosecution, attorney and other legal services.
-        you need. For more enquires, check our <a href="#contact-us">contact section</a>
+        you need. For more enquires, kindly check our <a class="feature-link" href="#contact-us">contact section</a>:
     </p>
     <p>To get started fill our form section below.</p>
   </div>
     <form id="form" action="https://www.freecodecamp.com/email-submit" method="">
-     <input id='email' type="email" placeholder="Kindly enter your email address" name="email" required/>
+      <label for="email"></label>
+     <input id='email' type="email" placeholder="Kindly enter your email" name="email" required/>
+     <label for="submit"></label>
       <input id="submit" type='submit' value="GET STARTED" aria-label="">
   </form>
 
@@ -60,11 +62,6 @@ rel="stylesheet"
 </section>
 <section id="products">
   <h1 class="product-heading">Our products</h1>
-  <!-- 
-  To give consultation to clients for legal information and documents 
-  To review documents from a legal perspective like agreements between two parties, leases,
-   wills, corporation documents, court forms, company formation papers
- -->
   <div class="all-products">
     <img src="images/legal-product-1.jpeg" alt="court-judgement"  title="court judgement support" id="product">
     <img src="images/legal-product-2.jpeg" alt="document reviews"  title="Legal documents reviews" id="product">
@@ -148,7 +145,10 @@ rel="stylesheet"
 </div>
 </footer>
 </main>
-
+<script src="https://kit.fontawesome.com/0eaf613524.js"
+crossorigin="anonymous"></script>
+</body>
+></script>
 </body>
 
 </html>
