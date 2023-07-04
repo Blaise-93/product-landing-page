@@ -23,7 +23,7 @@ rel="stylesheet"
       <div><a class="nav-link" href="#email"></a></div>
       <div><a class="nav-link" href="#features">Features</a></div>
       <div><a class="nav-link" href="#services">Services</a></div>
-      <div><a class="nav-link" href="#Products">Products</a></div>
+      <div><a class="nav-link" href="#products">Products</a></div>
       <div><a class="nav-link" href="#contact-us">Contact Us</a></div>
   </nav>
 </header>
@@ -37,7 +37,7 @@ rel="stylesheet"
     </p>
     <p>To get started fill our form section below.</p>
   </div>
-    <form id="form" action="https://www.freecodecamp.com/email-submit" method="">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
       <label for="email"></label>
      <input id='email' type="email" placeholder="Kindly enter your email" name="email" required/>
      <label for="submit"></label>
@@ -52,7 +52,8 @@ rel="stylesheet"
     </p>
     <ul class="other-services">
       <li class="roles">Adept at given consultation to legal information and documents.</li>
-      <li class="roles">Review documents from a legal perspective like agreements between two parties, leases etc </li>
+      <li class="roles">Review documents from a legal perspective like agreements between two parties, 
+        leases etc </li>
       <li class="roles">Offer mediation, arbitration, and other third-party services to clients.</li>
       <li class="roles">Prepare legal documents for clients</li>
       <li class="roles">Represent clients in negotiations that happen under collaborative lawyering agreement.</li>
@@ -64,9 +65,9 @@ rel="stylesheet"
 <section id="products">
   <h1 class="product-heading">Our products</h1>
   <div class="all-products">
-    <img src="images/legal-product-1.jpeg" alt="court-judgement" id="judgement"  title="court judgement support" id="product">
+    <img src="images/legal-product-1.jpeg" alt="court-judgement" id="judgement"  title="Court judgement support" id="product">
     <img src="images/legal-product-2.jpeg" alt="document reviews" id="selected-img" title="Legal documents reviews" id="product">
-    <img src="images/legal-product-4.jpeg" alt="dispute resolution" id="selected-img" title="legal dispute resolution" id="product">
+    <img src="images/legal-product-4.jpeg" alt="dispute resolution" id="selected-img" title="Legal dispute resolution" id="product">
     <img src="images/proceedings.jpeg" alt="court room represent"  title="Represent clients in courtrooms in case of arbitration" id="product">
     <img src="images/legal-product-5.jpeg" alt="legal backing"  title="Legal backing and advise" id="product">
     <img src="images/legal-court.jpg" alt="legal proceeding"  title=" Legal proceedings " id="product">
@@ -79,9 +80,10 @@ rel="stylesheet"
       If you have Any Question for Us, Please Feel Free to contact us!
     </h6>
       <div class="">
-        <form action="" method="post" class="">
-        <div class="">
-            <div class="">
+        <form action="" method="post" class="contact-form">
+        <div class="contact-div">
+            <div class="form-floating">
+              <label for="full_name" class="label">Your name: </label>
               <div class="">
                 <input
                   type="text"
@@ -89,25 +91,28 @@ rel="stylesheet"
                   placeholder="Blaise Joe"
                   class="form-control"
                   id="full_name"
-                />
-                <label for="name">Your Name: </label>
+                  required
+                /> 
               </div>
             </div>
             <div class="">
             </div>
             <div class="">
               <div class="form-floating">
+                <label for="subject" class="label">Subject:</label>
                 <input
                   type="text"
                   id="subject"
                   name="subject"
                   class="form-control"
+                  required
                   placeholder="subject"
                 />
-                <label for="subject">Subject:</label>
+                
               </div>
             </div>
-            <div class="">
+            <div class="form-floating">
+              <label for="message" class="label">Message:</label>
               <div class="message">
                 <textarea 
                   name="message"
@@ -115,13 +120,14 @@ rel="stylesheet"
                   cols="50"
                   rows="8"
                   class=""
-                ></textarea>
-                <label for="message" class="">Message</label>
+                  placeholder="Enter your message here"
+                  required
+                ></textarea>        
               </div>
             </div>
             <div class="">
               <button
-                class=""
+                id="submit"
                 type="submit" name="submit" aria-label="submit your message"
               >
                 Submit
@@ -132,10 +138,10 @@ rel="stylesheet"
       </div>
  
 </section>
-<footer id="footer"> Copyright @
+<footer id="footer"> Copyright @Uptown Legal Coporations
   <script>
       document.write(new Date().getFullYear());
-  </script>, Uptown Legal Coporations. 
+  </script>. 
 
 </div>
 <div class="developer">

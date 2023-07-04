@@ -96,7 +96,8 @@ justify-content: space-between;
   justify-content: center;
 }
 
-.feature-link{
+.feature-link,
+.developer > a{
   color: steelblue
 }
 
@@ -107,7 +108,9 @@ justify-content: space-between;
   justify-content: center; 
 }
 
-#email {
+#email,
+#full_name,
+#subject {
   padding: 0.7em 1.5em;
   margin: 0.5em 0;
   font-size: 1em;
@@ -130,7 +133,8 @@ justify-content: space-between;
   font: bold;
 }
 #submit:hover,
-#submit:active {
+#submit:active
+ {
   color: whitesmoke;
   background-color: steelblue
 }
@@ -177,14 +181,24 @@ justify-content: space-between;
 }
 
 #products {
-  border: 2px solid red;
   padding: 1.5em;
   display: flex;
   flex-wrap: wrap;
 }
 
-.product-heading {
+.product-heading,
+.contact-heading {
   margin-bottom: 0.325em;
+  font-size: 2em;
+  text-transform: capitalize;
+}
+
+.contact-subheading,
+.developer {
+ text-align: justify;
+ font-size: 1.2em;
+ font-weight: 400;
+
 }
 
 .allproducts {
@@ -192,22 +206,59 @@ justify-content: space-between;
   flex-wrap: wrap;
   align-items:center;
   justify-content: center;
-  gap: 2em;
-
 }
 
+.form-floating {
+  display: flex;
+  flex-direction: column;
+  align-items:center
+}
 .all-products > img {
   width: 600px;
+  
 }
-#selected-img {
+#selected-img ,
+#judgement{
   height: 400px;
 }
-#judgement {
 
+#contact-us {
+  padding: 1.5em 5em;
 }
+
+#footer{
+  text-align:center;
+  font-family: "lato", sans-serif;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.contact-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  padding: 1 1.4em;
+  font-size: 1.5rem;
+}
+
+#message {
+  font-size: 1.1rem;
+  padding: 1em 0;
+  color:#34383c;
+  padding: .55em;
+  resize: none;
+  border-radius: 5px;
+  background-color: #e0e0e0
+}
+
+.label {
+ align-self: start;
+}
+
 @media(max-width: 800px){
     body{
       font-size: 1.5rem
+
     }
 }
 
